@@ -5,7 +5,7 @@ This repository contains the data analysis and visualization code used in the ma
 
 The scripts process experimental data collected from 21 participants, perform statistical analyses, and generate all figures used in the thesis.
 
-### Overview
+## Overview
 
 This project analyzes player experience across three gameplay modes:
 
@@ -19,7 +19,8 @@ The goal is to evaluate whether the adaptive system:
 - Produces more consistent experiences across participants
 - Aligns with player behavioral tendencies
 
-### Repository Structure
+## Repository Structure
+```
 .
 ├── Run_Analysis.py                       # Main script for statistical analysis
 ├── Analysis_Functions.py                 # Statistical tests and helper functions
@@ -27,24 +28,30 @@ The goal is to evaluate whether the adaptive system:
 ├── Plot_Functions.py                     # Plotting utilities
 ├── Adaptive_Game_Design_Study_Data.csv   # Collected Data after initial cleanup
 └── graphs/                               # Output folder for generated figures
+```
 
-
-### Requirements
+## Requirements
 
 Python 3.10+
 
-#### Install dependencies:
+### Install dependencies:
+```
 pip install pandas numpy matplotlib scipy statsmodels pingouin
+```
 
-### Usage
+## Usage
 
-#### Generate data visualizations
+### Generate data visualizations
+```
 python Generate_Visualizations.py
+```
 
-#### Run analysis:
+### Run analysis:
+```
 python Run_Analysis.py
+```
 
-### Outputs:
+## Outputs:
 Printed statistical results in the console
 CSV files (ICC results)
 Figures saved in graphs/
